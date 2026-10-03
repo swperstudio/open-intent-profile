@@ -1,0 +1,85 @@
+{
+  "spec": "open-intent-profile/0.1",
+  "owner": "did:example:matt",
+  "updated": "2026-10-02",
+
+  "standing_values": [
+    {
+      "id": "v1",
+      "says": "I'd rather buy from independent makers",
+      "weight": "strong",
+      "source": "stated",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "v2",
+      "says": "Repairable beats shiny and new",
+      "weight": "medium",
+      "source": "accepted_proposal",
+      "added": "2026-10-02",
+      "because": "Rejected 3 non-repairable options in a row"
+    }
+  ],
+
+  "standing_constraints": [
+    {
+      "id": "c1",
+      "says": "No subscriptions",
+      "rule": { "billing": "one_off" },
+      "source": "stated",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "c2",
+      "says": "Ships to the UK",
+      "rule": { "ships_to": "GB" },
+      "source": "stated",
+      "added": "2026-09-25"
+    }
+  ],
+
+  "active_brief": {
+    "id": "b-2026-09-25-coat",
+    "mode": "wander",
+    "says": "Winter coat for cycling to work",
+    "needs": [
+      { "id": "n1", "says": "waterproof" },
+      { "id": "n2", "says": "visible in the dark" },
+      { "id": "n3", "says": "fits over a hoodie" }
+    ],
+    "budget": { "max": 200, "currency": "GBP" },
+    "by": "2026-11-01",
+    "overrides": [],
+    "expires": "on_purchase"
+  },
+
+  "declined": [
+    {
+      "says": "Rule out big brands altogether",
+      "proposed_by": "example-shopping-agent",
+      "declined": "2026-09-30",
+      "quiet_until": "2026-12-30"
+    }
+  ],
+
+  "history": [
+    {
+      "date": "2026-10-02",
+      "change": "added",
+      "id": "v2",
+      "trigger": "accepted_proposal",
+      "because": "Rejected 3 non-repairable options in a row"
+    }
+  ],
+
+  "agent_access": [
+    {
+      "agent": "example-shopping-agent",
+      "can_read": ["standing_values", "standing_constraints", "active_brief"],
+      "can_propose": true,
+      "can_write": false,
+      "can_buy": false,
+      "expires": "2026-12-31"
+    }
+  ]
+}
