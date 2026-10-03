@@ -1,7 +1,7 @@
 # Open Intent Profile: draft spec v0.1
 
-**Status:** draft, published for comment · **First published:** 3 October 2026
-**Author:** Matt Pollitt, [Swper](https://swper.studio)
+**Status:** draft, published for comment · **First published:** 3 October 2026<br>
+**Author:** Matt Pollitt, [Swper](https://swper.studio)<br>
 **Licence:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
