@@ -1,0 +1,15 @@
+{
+  "spec": "open-intent-profile/0.2",
+  "owner": "did:example:matt",
+
+  "active_brief": {
+    "id": "b-2026-10-12-coat",
+    "mode": "wander",
+    "says": "Winter coat for cycling to work, under £200",
+    "needs": [
+      { "id": "n1", "says": "waterproof" }
+    ],
+    "budget": { "max": 200, "currency": "GBP" },
+    "expires": "on_purchase"
+  }
+}

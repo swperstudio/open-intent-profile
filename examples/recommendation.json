@@ -2,5 +2,8 @@
   "product": "...",
   "because": ["v1", "v2", "c2", "b-2026-09-25-coat#n1"],
   "broke": [],
-  "sponsored": false
+  "commercial": {
+    "relationships": [],
+    "same_terms_for_all_sellers": true
+  }
 }
